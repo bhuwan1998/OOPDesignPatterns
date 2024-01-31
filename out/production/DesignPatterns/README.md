@@ -72,6 +72,48 @@ canvas.mouseUp();
 Showcasing how the state pattern can be applied to a TCP Connection class to have 3 different behaviours such 
 established, listen and closed using an abstract class here. 
 
+
+### Strategy Pattern 
+
+This is a behaviour design pattern that allows the behaviour of an object to be selected at runtime. It is one of 
+the GoF design patterns, which are widely used in object-oriented programming. The pattern consists of three main components 
+:the Context, Strategy and Concrete Strategy. The context is the class that contains the object whose behaviour needs to 
+be changed dynamically. The strategy is the interface or abstract class that defines the common methods for all algorithms 
+that can be used by the Context object. The Concrete Strategy is the class that implements the Strategy interface and  
+provides the actual implementation of the algorithm. 
+
+**Intent**
+Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary 
+independently from clients that use it. 
+
+**Applicability** (When to use the pattern)
+
+- Many related classes differ only in their behaviour. Strategies provide a way to configure a class with one of many behaviours. 
+- Requirement is to have different variants of algorithm. Can be implemented as a hierarchy of algorithms
+- an algo uses data that clients shouldn't know about. Use strategy  pattern to avoid exposing  complex, algo specific data structure.
+- a class defines many behaviours, and these appear as multiple conditional statements in its operations. Instead of many 
+conditionals, move related conditional branches into their own Strategy class.
+
+![img_1.png](img_1.png)
+
+
+### Template Method 
+
+Template method uses a parent class to create an algorithm as a skeleton of operations and leave the details to be implemented 
+by the child classes. The overall structure and sequence of the algorithm are preserved by the parent class. 
+
+An example is a Preset HTML template which has a fixed preset format. 
+
+Implementation: This design pattern is used popularly in framework development. This helps to avoid code duplication also. 
+
+![template_method.png](template_method.png)
+
+- Abstract Class: This class cannot be overridden by any other classes except for the abstract methods defined by the programmer.
+Therefore, the overridden abstract methods for concrete classes extending them creates an easy template for the programmer 
+to not duplicate code and implement the same methods over and over again. 
+- Many concrete classes can be made from this abstract class. Overall it is an easy desing pattern to implement for decoupling 
+the parent class from child class.
+
 ## Creational Patterns 
 
 ### Builder Pattern 
