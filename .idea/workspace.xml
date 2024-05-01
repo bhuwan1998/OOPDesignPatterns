@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd2a889-3c58-4f08-b693-ea5a562561ad" name="Changes" comment="Encapsulation - with Account Class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPatterns/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPatterns/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
